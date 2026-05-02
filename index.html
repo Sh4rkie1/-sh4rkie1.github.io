@@ -232,6 +232,27 @@ body {
   border-radius: 1px;
 }
 
+/* PROTEST PHOTO */
+.protest-photo {
+  margin: 36px 0 28px;
+  border-left: 3px solid var(--red);
+  padding-left: 0;
+}
+.protest-photo img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 2px;
+  filter: grayscale(30%) contrast(1.1);
+  display: block;
+}
+.protest-photo figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--ash);
+  letter-spacing: 0.02em;
+}
+
 /* BOOKS */
 .books-grid {
   display: grid;
@@ -450,11 +471,15 @@ body {
     <h2 class="section-title">GARY LEE<br>STANIFORTH</h2>
     <div class="about-grid">
       <div class="about-text">
-        <p>On a grey November morning in 2008, Gary Staniforth stood alone outside Bradford Council offices — freshly out of a Salvation Army hostel, homeless, battling addiction, carrying a simple cardboard sign: <strong><em>Someone has to care before someone dies.</em></strong> He didn't march. He didn't chant. He stood still for nineteen hours.</p>
-        <p>That quiet, stubborn act of presence became the foundation of <strong>Hidden Voices</strong> — the social enterprise that went on to transform the lives of more than 600 people across Bradford. Partnering with over 50 organisations, Gary built a movement rooted in a deceptively simple idea: people experiencing homelessness, addiction, and poverty aren't problems to be managed. They are people with stories worth telling.</p>
-        <p>Hidden Voices launched creative writing workshops, rap sessions, photography projects, and peer-led storytelling in hostels, day centres, and women's projects across Bradford. Participants wrote raw poetry, shared personal testimony, and saw their words become a magazine, a book — <em>Forgotten</em>, highly commended at the 2010 National Charity Awards — a short film, and bold billboard campaigns. By 2018, more than 600 individuals had passed through the programme.</p>
-        <p>Gary's lived experience — the streets of Bradford, the hostel corridors, the estates that chew people up — was always going to find its way onto the page. His debut novel, <strong>Asphalt Saints</strong>, introduced readers to Jack Lee: a man who arrives early when the system arrives late, who protects the vulnerable with a quiet, fierce tenacity drawn directly from Gary's own years on the front line. The sequel, <strong>The Grey Man</strong>, deepens that world — carrying the same gritty, street-level solidarity into territory where justice is personal and loyalty is everything.</p>
-        <p>Away from the page, Gary earns his living behind the wheel of an HGV and rides Harley-Davidson motorcycles — not as a hobby, but as an extension of a worldview. Self-reliance. The open road. The knowledge that the work is real and the load is yours to carry.</p>
+        <p>In 2008, Gary Staniforth walked out of a Salvation Army hostel in Bradford — homeless, battling addiction — and stood outside Bradford Council offices with a cardboard sign: <strong><em>Someone has to care before someone dies.</em></strong> Not for a day. For <strong>six weeks. Nine in the morning until six at night. Every day. In all weathers.</strong> He didn't march. He didn't chant. He just refused to be invisible.</p>
+        <p>That stubborn, quiet act of presence became the foundation of <strong>Hidden Voices</strong> — the social enterprise that went on to transform the lives of more than 600 people across Bradford. Partnering with over 50 organisations, Gary built a movement rooted in a deceptively simple idea: people experiencing homelessness, addiction, and poverty aren't problems to be managed. They are people with stories worth telling.</p>
+        <p>Hidden Voices launched creative writing workshops, rap sessions, photography projects, and peer-led storytelling in hostels, day centres, and women's projects across Bradford. Participants wrote raw poetry, shared personal testimony, and saw their words become a magazine, a book — <em>Forgotten</em>, highly commended at the 2010 National Charity Awards — a short film, and bold billboard campaigns that asked uncomfortable questions of Bradford's commuters. By 2018, more than 600 individuals had passed through the programme.</p>
+        <p>Gary's lived experience — the Bradford hostels, the estates, the system that writes people off — was always going to find its way onto the page. His debut novel, <strong>Asphalt Saints</strong>, is set in the streets of Sheffield and follows Jack Lee: a man who arrives early when the system arrives late, who protects the vulnerable with a quiet, fierce tenacity drawn directly from Gary's own years on the front line. The sequel, <strong>The Grey Man</strong>, deepens that world — carrying the same gritty, street-level solidarity into territory where justice is personal and loyalty is everything.</p>
+        <p>Away from the page, Gary earns his living behind the wheel of an HGV out of Bradford and rides Harley-Davidson motorcycles — not as a hobby, but as an extension of a worldview. Self-reliance. The open road. The knowledge that the work is real and the load is yours to carry.</p>
+        <figure class="protest-photo">
+          <img src="protest.jpg" alt="Gary outside Bradford Council, 2008 — six weeks standing for the hidden homeless">
+          <figcaption>Bradford Council offices, 2008. Six weeks. Nine to six. Every day. In all weathers.</figcaption>
+        </figure>
         <div class="about-tags">
           <span class="tag">Author</span>
           <span class="tag">HGV Driver</span>
@@ -484,7 +509,7 @@ body {
         <div class="book-body">
           <p class="book-series">Asphalt Saints · Book 1</p>
           <h3 class="book-title">ASPHALT SAINTS</h3>
-          <p class="book-synopsis">Jack Lee doesn't wait for the system to save people — he's been burned by it too many times. When children start disappearing from the estates he knows too well, Jack moves through the shadows of Bradford with a quiet, fierce tenacity that authority can't touch and paperwork can't slow down. Raw, street-level, and uncompromising.</p>
+          <p class="book-synopsis">Jack Lee doesn't wait for the system to save people — he's been burned by it too many times. When children start disappearing from the Sheffield estates he knows too well, Jack moves through the shadows with a quiet, fierce tenacity that authority can't touch and paperwork can't slow down. Raw, street-level, and uncompromising.</p>
           <a href="https://www.amazon.co.uk/dp/B0GXSNF97D" target="_blank" rel="noopener" class="book-buy">
             <svg viewBox="0 0 24 24"><path d="M13.12 2.06L7.58 7.6c-.37.37-.58.88-.58 1.41V19c0 1.1.9 2 2 2h9c.76 0 1.45-.43 1.79-1.1l3.07-6.56c.52-1.12-.29-2.34-1.53-2.34h-5.03l.68-3.39c.1-.49-.03-1-.35-1.36L13.12 2.06zM3 9c-1.1 0-2 .9-2v8c0 1.1.9 2 2 2s2-.9 2-2v-8c0-1.1-.9-2-2-2z"/></svg>
             Buy on Amazon
