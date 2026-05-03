@@ -332,6 +332,76 @@ body {
 .book-buy:hover { background: #931515; }
 .book-buy svg { width: 16px; height: 16px; fill: currentColor; }
 
+/* REVIEWS */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 28px;
+}
+.review-card {
+  background: var(--charcoal);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: border-color 0.2s;
+}
+.review-card:hover { border-color: rgba(176,26,26,0.4); }
+.review-stars {
+  color: #c8a84b;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+.review-title {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--white);
+  line-height: 1.4;
+}
+.review-body {
+  color: var(--silver);
+  font-size: 1rem;
+  line-height: 1.7;
+  flex: 1;
+}
+.review-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.review-author {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  color: var(--white);
+}
+.review-detail {
+  font-size: 0.82rem;
+  color: var(--ash);
+}
+.review-amazon {
+  font-size: 0.82rem;
+  color: var(--red);
+  text-decoration: none;
+  margin-top: 4px;
+  transition: color 0.2s;
+}
+.review-amazon:hover { color: var(--white); }
+
+/* FOOTER COUNTER */
+.footer-counter {
+  margin-bottom: 16px;
+}
+.footer-counter img {
+  height: 22px;
+  opacity: 0.7;
+}
+
 /* HOOKS */
 .hooks-section { background: var(--black); }
 .hooks-grid {
@@ -501,6 +571,7 @@ body {
   <ul class="nav-links" id="nav-links">
     <li><a href="#about" onclick="closeMenu()">About</a></li>
     <li><a href="#books" onclick="closeMenu()">Books</a></li>
+    <li><a href="#reviews" onclick="closeMenu()">Reviews</a></li>
     <li><a href="#newsletter" onclick="closeMenu()">Newsletter</a></li>
     <li><a href="#connect" onclick="closeMenu()">Connect</a></li>
   </ul>
@@ -590,6 +661,28 @@ body {
             <svg viewBox="0 0 24 24"><path d="M13.12 2.06L7.58 7.6c-.37.37-.58.88-.58 1.41V19c0 1.1.9 2 2 2h9c.76 0 1.45-.43 1.79-1.1l3.07-6.56c.52-1.12-.29-2.34-1.53-2.34h-5.03l.68-3.39c.1-.49-.03-1-.35-1.36L13.12 2.06zM3 9c-1.1 0-2 .9-2v8c0 1.1.9 2 2 2s2-.9 2-2v-8c0-1.1-.9-2-2-2z"/></svg>
             Buy on Amazon
           </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section section-dark" id="reviews">
+  <div class="section-inner">
+    <p class="section-label">Reader Reactions</p>
+    <h2 class="section-title">WHAT THEY'RE<br>SAYING</h2>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <h4 class="review-title">"A heartbreaking, heartwarming must have"</h4>
+        <p class="review-body">An absolutely gripping read. All emotions rolled into one. From the heartbreaking tears, to the smiles of joy. Gary has used his memories, knowledge and fictional facts to show the world that people do care and how brotherhood isn't a bad thing. Can't wait for book 2.</p>
+        <div class="review-meta">
+          <span class="review-author">Michelle Wardman</span>
+          <span class="review-detail">Verified Purchase · Paperback · United Kingdom · April 2026</span>
+          <a href="https://www.amazon.co.uk/dp/B0GX2Y1N5B" target="_blank" rel="noopener" class="review-amazon">Read on Amazon ↗</a>
         </div>
       </div>
 
@@ -699,6 +792,9 @@ body {
 
 <!-- FOOTER -->
 <footer class="footer">
+  <div class="footer-counter">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fsh4rkie1.github.io&count_bg=%23B01A1A&title_bg=%230a0a0a&icon=eye&icon_color=%23f0ede8&title=visitors&edge_flat=true" alt="Visitor count">
+  </div>
   <p>&copy; 2026 Gary Staniforth. All rights reserved.</p>
 </footer>
 
